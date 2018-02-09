@@ -14,6 +14,7 @@ public class BattleShips {
         System.out.println("**** Welcome to battle ships game ****");
         System.out.println("\tRight now, the sea is empty");
     }
+    //This method is used to display the current state of our ocean.
     public static void displayMap(int [][] ocean){
         displayColumns();
         for(int i = 0; i<10; i++){
@@ -45,6 +46,7 @@ public class BattleShips {
                 System.out.print(i+" ");
         }
     }
+    //This method deploys the user's ships in the ocean
     public static void deployShipsUser(int [][] ocean){
         int i = 1 ;
         System.out.println("\nDeploy Your Ships");
@@ -64,6 +66,7 @@ public class BattleShips {
         }
         displayMap(ocean);
     }
+    //This method deploys the computer's ships in the ocean
     public static void deployShipsCom(int [][] ocean){
         System.out.println("\nComputer is deploying its ships");
         Random rand = new Random();
@@ -78,6 +81,7 @@ public class BattleShips {
             }
         }
     }
+    //This method starts the battle between the user and computer
     public static void battleBegins(int [][] ocean) {
         System.out.println("\nLet the battle begin");
         int [] ships = {5,5};
@@ -95,6 +99,7 @@ public class BattleShips {
             }
         }
     }
+    //This method structures the turn of the user playing
     public static void playerTurn(int [][] ocean,int [] ships){
         Scanner input = new Scanner(System.in);
         System.out.println("YOUR TURN");
@@ -125,6 +130,7 @@ public class BattleShips {
             }
         }
     }
+    //This method structures the computer's move
     public static void computerTurn(int [][] ocean, int [] ships){
         System.out.println("Computer's turn");
         Random rand = new Random();
