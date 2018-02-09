@@ -78,25 +78,25 @@ public class FractionCalculator {
             Fraction res;
             if(operation.equals("+")) {
                 res = a.add(b);
-                System.out.println(a.getNumerator() + "/" + a.getDenominator() + "+" + b.getNumerator() + "/" + b.getDenominator() + "=" + res.getNumerator() + "/" + res.getDenominator());
+                System.out.println(a.toString() + " + "+b.toString()+ " = "+res.toString());
             }
             else if(operation.equals("-")) {
                 res = a.subtract(b);
-                System.out.println(a.getNumerator() + "/" + a.getDenominator() + "-" + b.getNumerator() + "/" + b.getDenominator() + "=" + res.getNumerator() + "/" + res.getDenominator());
+                System.out.println(a.toString() + " - "+b.toString()+ " = "+res.toString());
             }
             else if(operation.equals("*")) {
                 res = a.multiply(b);
-                System.out.println(a.getNumerator() + "/" + a.getDenominator() + "*" + b.getNumerator() + "/" + b.getDenominator() + "=" + res.getNumerator() + "/" + res.getDenominator());
+                System.out.println(a.toString() + " * " + b.toString() + " = " + res.toString());
             }
             else if(operation.equals("/")) {
                 res = a.divide(b);
-                System.out.println(a.getNumerator() + "/" + a.getDenominator() + "/" + b.getNumerator() + "/" + b.getDenominator() + "=" + res.getNumerator() + "/" + res.getDenominator());
+                System.out.println(a.toString() + " / "+b.toString()+ " = "+res.toString());
             }
             else if(operation.equals("=")){
                 if(a.equals(b))
-                    System.out.println(a.getNumerator()+"/"+a.getDenominator()+"="+b.getNumerator()+"/"+b.getDenominator());
+                    System.out.println(a.toString()+ " = "+ b.toString());
                 else
-                    System.out.println(a.getNumerator()+"/"+a.getDenominator()+"!="+b.getNumerator()+"/"+b.getDenominator());
+                    System.out.println(a.toString()+ " != "+ b.toString());
             }
         }
     }
